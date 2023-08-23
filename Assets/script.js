@@ -157,7 +157,7 @@ console.log(characters.Hulk);
 
 console.info("12/ Les points d'expérience d'Aquaman");
 
-console.log();
+console.log(characters.Aquaman.xp);
 
 /* ------------------------- */
 

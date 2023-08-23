@@ -165,9 +165,9 @@ console.info("13/ Qui est le plus fort entre Godzilla et Kong ?");
 
 let strongest;
 
-if (characters.Godzilla.weapon > characters.Kong.weapon){strongest = "Godzilla"}
-else (strongest = kong)
-
+if (characters.Godzilla.weapon > characters.Kong.weapon) {
+  strongest = "Godzilla";
+} else strongest = kong;
 
 console.log(strongest);
 
@@ -182,7 +182,17 @@ console.log(characters);
 
 console.info("15/ Le nom du personnage avec le moins de points de vie");
 
-console.log();
+let minLifeChar;
+let charMin;
+
+for (let keys in characters) {
+  if (minLifeChar === undefined || minLifeChar > characters[keys].life) {
+    minLifeChar = characters[keys].life;
+    charMin = keys;
+  }
+}
+
+console.log(charMin);
 
 /* ------------------------- */
 

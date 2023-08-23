@@ -175,7 +175,8 @@ console.log(strongest);
 
 console.info("14/ La liste des noms des personnages");
 
-console.log();
+console.log(Object.keys(characters));
+console.log(characters);
 
 /* ------------------------- */
 

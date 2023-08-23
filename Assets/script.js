@@ -151,7 +151,7 @@ const characters = {
 
 console.info("11/ Affichez toutes les caractéritiques de Hulk.");
 
-console.log();
+console.log(characters.Hulk);
 
 /* ------------------------- */
 

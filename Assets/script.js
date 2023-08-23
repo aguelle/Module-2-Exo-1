@@ -163,7 +163,13 @@ console.log(characters.Aquaman.xp);
 
 console.info("13/ Qui est le plus fort entre Godzilla et Kong ?");
 
-console.log();
+let strongest;
+
+if (characters.Godzilla.weapon > characters.Kong.weapon){strongest = "Godzilla"}
+else (strongest = kong)
+
+
+console.log(strongest);
 
 /* ------------------------- */
 

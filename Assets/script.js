@@ -198,4 +198,14 @@ console.log(charMin);
 
 console.info("16/ Qui a l'arme la plus puissante ?");
 
-console.log();
+let maxWeapon;
+let charMaxWeapon;
+
+for (let char in characters) {
+  if (maxWeapon === undefined || maxWeapon < characters[char].weapon) {
+    maxWeapon = characters[char].weapon;
+    charMaxWeapon = char;
+  }
+}
+
+console.log(charMaxWeapon);
